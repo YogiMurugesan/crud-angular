@@ -1,31 +1,27 @@
 <table>
     <thead>
         <tr style="text-align: left;">
+            <th style="width :10%">Id</th>
             <th style="width :30%">Name</th>
             <th style="width :30%">Email</th>
             <th style="width :30%">Role</th>
         </tr>
-        <tr>
-            <td>{{"Yogi"}}</td>
-            <td>{{"Yogi@gmail.com"}}</td>
-            <td>{{"Developer"}}</td>
-            <td>
-                <button>
-                  <span>{{"delete"}}</span>
-                </button>
-            </td>
-        </tr>
     </thead>
     <tbody>
         <tr *ngFor="let user of users">
+
+            <td>{{user.id}}</td>
             <td>{{user.fname}}</td>
             <td>{{user.email}}</td>
             <td>{{user.role}}</td>
             <td style="white-space: nowrap">
                 <button>
-                    Delete
-                </button>
+                        Delete
+                    </button>
             </td>
         </tr>
     </tbody>
+
+
+
 </table>
